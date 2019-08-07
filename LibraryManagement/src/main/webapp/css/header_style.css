@@ -1,0 +1,60 @@
+@charset "ISO-8859-1";
+.boddy{
+	margin:0;
+	color: #666;
+}
+.header{
+	
+	background-color: #32A59C;
+	text-align: center;
+	width: 100%;
+	color: white;
+	height: 10%;
+    padding-top: 5px;
+}
+.loginbox
+{
+	background: #BFF4F0;
+	border: 1px solid #42464b;
+	border-radius: 1px;
+	height:25%;
+	width:20%;
+	display: block;
+	margin: 10% auto 0;
+	
+}
+
+input[type="password"], input[type="text"] {
+  
+  border: 1px solid #a1a3a3;
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  color: black;;
+  height: 30px;
+  margin: 25px 0 0 29px;
+  padding-left: 30px;
+  transition: box-shadow 0.3s;
+  width: 240px;
+}
+.button {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 1px;
+  cursor: pointer;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #32A59C;
+   color: white;
+   text-align: center;
+}
