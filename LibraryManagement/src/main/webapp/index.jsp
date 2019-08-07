@@ -32,8 +32,10 @@ function validateForm() {
 <br><br>
 <center>
 <input type="submit" class="button" value="Submit">
+
 </center>
 </form>
+<a href="getLinkReg" class="button">Registration</a>
 </div>
 
 <div class="footer">

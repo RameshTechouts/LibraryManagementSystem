@@ -9,6 +9,7 @@ import java.util.List;
 import com.library.entity.DeleteBookEntity;
 import com.library.entity.IssueBookEntity;
 import com.library.entity.LoginEntity;
+import com.library.entity.RegistrationEntity;
 import com.library.entity.SavebookEntity;
 import com.mysql.jdbc.PreparedStatement;
 
@@ -181,6 +182,29 @@ public class LibraryDao
 
 
 		return list;
+	}
+
+	public static int saveRegistration(RegistrationEntity re) {
+		
+		int status=0;
+		try{
+			Connection con=LibraryDao.getConnection();
+			PreparedStatement ps=(PreparedStatement) con.prepareStatement("insert into lib_registration(fname,lname,password,mail,mobile,dob,gender) values (?,?,?,?,?,?,?)");
+			
+			ps.setString(1, re.getFname());
+			ps.setString(2, re.getLname());
+			ps.setString(3, re.getPassword());
+			ps.setString(4, re.getMail());
+			ps.setInt(5, re.getMobile());
+			ps.setString(6, re.getDob());
+			ps.setString(7, re.getGender());
+			
+			status=ps.executeUpdate();
+			
+			con.close();
+		}catch(Exception ex){ex.printStackTrace();}
+		
+		return status;
 	}
 
 

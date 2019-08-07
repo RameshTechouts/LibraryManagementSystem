@@ -14,11 +14,11 @@
 }
 .loginbox
 {
-	background: #BFF4F0;
+	background: #32A59C;
 	border: 1px solid #42464b;
 	border-radius: 1px;
-	height:25%;
-	width:20%;
+	height:30%;
+	width:25%;
 	display: block;
 	margin: 10% auto 0;
 	
@@ -44,9 +44,9 @@ input[type="password"], input[type="text"] {
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   font-size: 16px;
-  margin: 10px 1px;
+  margin: 2px 1px;
   cursor: pointer;
 }
 .footer {
